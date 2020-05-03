@@ -31,7 +31,7 @@ inherited PplCaContact: TPplCaContact
         Width = 281
         Height = 33
         Anchors = [akLeft, akTop, akRight]
-        EditLabel.Width = 62
+        EditLabel.Width = 61
         EditLabel.Height = 25
         EditLabel.BiDiMode = bdRightToLeft
         EditLabel.Caption = #1575#1604#1575#1587#1605' (EN)'
@@ -49,7 +49,7 @@ inherited PplCaContact: TPplCaContact
         Width = 281
         Height = 33
         Anchors = [akLeft, akTop, akRight]
-        EditLabel.Width = 53
+        EditLabel.Width = 52
         EditLabel.Height = 25
         EditLabel.BiDiMode = bdRightToLeft
         EditLabel.Caption = #1575#1604#1575#1587#1605' ('#1593')'
