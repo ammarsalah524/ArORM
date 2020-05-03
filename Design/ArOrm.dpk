@@ -1,0 +1,56 @@
+package ArOrm;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  dbrtl,
+  adortl,
+  designide,
+  vclwinx,
+  vclx,
+  xmlrtl,
+  vclactnband,
+  vclimg,
+  vcldb,
+  VclSmp;
+
+contains
+  ArEdit in 'ArEdit.pas',
+  ArOrm.Obj.Info in '..\ArOrm.Obj.Info.pas',
+  ArOrm.Consts in '..\ArOrm.Consts.pas',
+  ArOrm.Da.Base in '..\ArOrm.Da.Base.pas',
+  ArSearchDlg in 'ArSearchDlg.pas' {ArSearchDialog},
+  ArGrid in 'ArGrid.pas',
+  ArColumnGrid in 'ArColumnGrid.pas';
+
+end.
+
+
+
